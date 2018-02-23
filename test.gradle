@@ -1,0 +1,3 @@
+task hh(type: Exec) {
+    println(rootProject.file('local.properties'))
+}

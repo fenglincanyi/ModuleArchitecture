@@ -1,0 +1,30 @@
+if (devmode) {
+    apply from: rootProject.file('application.gradle')
+} else {
+    apply from: rootProject.file('library.gradle')
+}
+
+android {
+    defaultConfig {
+        if (devmode) {
+            applicationId 'com.geng.article.module'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    implementation project(':service.module')
+}
+//
+//
+//dependencies {
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation 'com.android.support:appcompat-v7:26.1.0'
+//    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+//
+//    implementation project(':service_interface')
+//}
