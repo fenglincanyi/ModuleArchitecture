@@ -1,6 +1,6 @@
 ### 整体设计
-<img src="readme_imge/ModuleArchitecture.png"/>
-<img src="readme_imge/single_module.png"/>
+<img src="readme_imge/ModuleArchitecture.png" style="margin:0 auto;display:block"/>
+<img src="readme_imge/single_module.png" style="margin:0 auto;display:block"/>
 
 ### 项目粒度划分
 
