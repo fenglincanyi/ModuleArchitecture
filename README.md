@@ -1,3 +1,7 @@
+### 整体设计
+<img src="readme_imge/ModuleArchitecture.png"/>
+<img src="readme_imge/single_module.png"/>
+
 ### 项目粒度划分
 
 - *.module : 业务模块
