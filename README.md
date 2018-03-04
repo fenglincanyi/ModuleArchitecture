@@ -1,6 +1,7 @@
 ### 整体设计
 <img src="readme_imge/ModuleArchitecture.png" style="margin:0 auto;display:block"/>
 <img src="readme_imge/single_module.png" style="margin:0 auto;display:block"/>
+但是为了保证编译通过，我们还是要依赖 service.module，common.module，实际上并未使用其他module功能
 
 ### 项目粒度划分
 
@@ -27,6 +28,9 @@
 * debug: 每个 业务module可单独运行, 相关的接口依赖可以作为 compileOnly
 * release: 每个 业务module 转换成 lib
 
+### Dispatcher、Router
+各自的业务模块自己来注册，外界只管跳转
+
 ### 后期
 定制Android Studio 开发模板，定制开发目录
 
@@ -47,3 +51,8 @@ studio 有时候不识别manifest中的类，需rebuild/sync下
 https://mp.weixin.qq.com/s/6Q818XA5FaHd7jJMFBG60w
 http://www.cnblogs.com/LBSer/p/4853234.html
 Android bindService、AIDL
+
+
+组件化资料：
+https://juejin.im/entry/58d48a3ca22b9d00645378a7
+https://www.google.com.hk/search?q=%E7%BB%84%E4%BB%B6%E5%8C%96+android&oq=%E7%BB%84%E4%BB%B6%E5%8C%96&aqs=chrome.5.69i57j69i61j69i65j69i61j0l2.4796j0j1&sourceid=chrome&ie=UTF-8

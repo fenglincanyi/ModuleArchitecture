@@ -1,1 +1,1 @@
-include ':app', ':article.module', ':service.module', ':user.module', ':common.module', ':image.component', ':net.component', ':video.module', ':ui.component'
+include ':app', ':article.module', ':service.module', ':user.module', ':common.module', ':image.component', ':net.component', ':video.module', ':ui.component', ':router.processor', ':router.anno'
